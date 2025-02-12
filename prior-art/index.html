@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const root = document.getElementById("root");
+
+      function Counter() {
+        // Create elements
+        const section = document.createElement("section");
+        const h1 = document.createElement("h1");
+        h1.textContent = "Counter";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = "Count: ";
+        const count = document.createElement("span");
+        count.id = "count";
+        count.textContent = "0";
+        h2.appendChild(count);
+
+        const increment = document.createElement("button");
+        increment.id = "increment";
+        increment.textContent = "Increment";
+
+        const decrement = document.createElement("button");
+        decrement.id = "decrement";
+        decrement.textContent = "Decrement";
+
+        const reset = document.createElement("button");
+        reset.id = "reset";
+        reset.textContent = "Reset";
+
+        // Build DOM tree
+        section.appendChild(h1);
+        section.appendChild(h2);
+        section.appendChild(increment);
+        section.appendChild(decrement);
+        section.appendChild(reset);
+        root.appendChild(section);
+
+        // Add functionality
+        let countValue = 0;
+        document.addEventListener("click", (event) => {
+          if (event.target === increment) {
+            countValue++;
+            count.textContent = countValue;
+          } else if (event.target === decrement) {
+            countValue--;
+            count.textContent = countValue;
+          } else if (event.target === reset) {
+            countValue = 0;
+            count.textContent = countValue;
+          }
+        });
+      }
+      Counter();
+    </script>
+  </body>
+</html>

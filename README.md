@@ -1,0 +1,39 @@
+- Intro and setup
+  - Show skills radar/outline
+- Modern JS (all further code is in this definition of "Modern JS")
+  - Stages
+    - Stage 0: Too new
+    - Stage 1: Consideration
+    - Stage 2: Chosen a direction, but may change
+    - Stage 2.7: Approved, but being validated
+    - Stage 3: Recommended for implementation; no changes expected
+    - Stage 4: Ready to be included
+  - TypeScript
+    - Types as comments (stage 1)
+  - Pattern matching (stage 3)
+  - Pipeline operator (stage 2)
+  - Records and Tuples (stage 2)
+  - Temporal (stage 2)
+  - (Optional) How Programming Languages Work
+- Architecture
+  - Module Federation
+  - Edge
+  - PartyKit
+  - (Optional) How to deploy anything
+- Framework Revolution
+  - Prior art with React being not reactive
+  - Everyone's on some variation of signals
+  - What are signals: deep dive, we implement them from scratch
+  - React Compiler/Million.js
+  - Code splitting: Next.js and Qwik
+  - CSR, SSR, ISR, Islands, Resumability
+    - When to use what?
+  - Server Components and Suspense
+  - Partial Hydration/Prerendering
+- AI with JS
+  - RAG (Langflow)
+  - Agents (Langflow)
+  - AI SDK: RSC (Movies++)
+  - AI SDK: Tool Calling (Movies++)
+  - Bolt.new, v0, Langflow.new, make your own
+  - How to self-host any LLM

@@ -9,11 +9,11 @@
     - Stage 3: Recommended for implementation; no changes expected
     - Stage 4: Ready to be included
   - TypeScript
-    - Types as comments (stage 1)
-  - Pattern matching (stage 3)
-  - Pipeline operator (stage 2)
-  - Records and Tuples (stage 2)
-  - Temporal (stage 2)
+    - [Types as comments](https://tc39.es/proposal-type-annotations/) (stage 1)
+  - [Pattern matching](https://github.com/tc39/proposal-pattern-matching) (stage 1)
+  - [Pipeline operator](https://github.com/tc39/proposal-pipeline-operator) (stage 2)
+  - [Records and Tuples](https://tc39.es/proposal-record-tuple) (stage 2)
+  - [Temporal](https://tc39.es/proposal-temporal) (stage 3)
   - (Optional) How Programming Languages Work
 - Architecture
   - Module Federation
